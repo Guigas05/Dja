@@ -26,9 +26,9 @@ class Recipe(models.Model):
     created_at = models.DateTimeField(auto_now_add=True) #O auto_now_add significa que no momento da criação ele vai gerar uma data.
     updated_at = models.DateTimeField(auto_now=True) # O auto_now significa que quando houver atualizações ele alterará.
     is_published = models.BooleanField(default=False)
-    cover = models.ImageField(upload_to='recipes/covers/%Y/%m/%d/')
+    cover = models.ImageField(upload_to='recipes/covers/%Y/%m/%d/', blank=True, default='')
     category = models.ForeignKey(
-        Category, on_delete=models.SET_NULL, null=True
+        Category, on_delete=models.SET_NULL, null=True, blank=True, default=None
         )
     author = models.ForeignKey(
         User, on_delete=models.SET_NULL, null=True
