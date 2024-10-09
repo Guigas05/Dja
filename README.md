@@ -90,7 +90,7 @@ class Recipe(models.Model):
 3. **Controle de Publicação**: Apenas receitas que são marcadas como publicadas (`is_published=True`) serão exibidas publicamente.
 4. **Relacionamento com Usuários**: As receitas são associadas a usuários (autores), facilitando o controle de quais receitas pertencem a quais usuários.
 
-### Próximos Passos a seren desenvolvidos
+### Próximos Passos a serem desenvolvidos
 
 1. **Comentários e Avaliações**: Implementar um sistema onde os usuários possam comentar e avaliar as receitas.
 2. **Busca e Filtros**: Adicionar funcionalidades de busca e filtros por categorias, tempo de preparo, ou porções.
